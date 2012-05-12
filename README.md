@@ -1,6 +1,6 @@
 # Singool Tasks
 
-A demp app built with Singool.js
+A demo app built with Singool.js
 
 ## Installation
 
