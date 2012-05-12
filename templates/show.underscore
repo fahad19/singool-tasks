@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="span12">
+    <div id="content">
+      <%= this.html.breadcrumbs() %>
+      
+      <div class="page-header">
+        <h1>Task: <%= model.get('title') %></h1>
+      </div>
+      
+      <div class="actions">
+        <a href="#" class="btn" data-button="edit">Edit</a> 
+        <a href="#" class="btn btn-danger" data-button="delete">Delete</a>
+      </div>
+      
+      <p><strong>Priority:</strong> <%= model.get('priority') %></p>
+      <p><strong>Description:</strong> <%= model.get('description') %></p>
+      
+      <div id="comments">
+        <div class="page-header">
+          <h2>Comments</h2>
+        </div>
+      
+        <div class="comments-list">
+        </div>
+      
+        <%= this.form.create(this.model, {'class': ''}) %>
+          <%= this.form.input('body', {type: 'textarea', label: false}) %>
+          <%= this.form.submit('Add Comment') %>
+        <%= this.form.end() %>
+      </div>
+    </div>
+  </div>
+</div>

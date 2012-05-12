@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="span12">
+    <div id="content">
+      <%= this.html.breadcrumbs() %>
+      
+      <div class="page-header">
+        <h1>Add Task</h1>
+      </div>
+      
+      <%= this.form.create(this.model) %>
+        <fieldset>
+          <%= this.form.inputs() %>
+        
+              <div class="form-actions">
+                <%= this.form.submit() %>
+                &nbsp;
+                <%= this.form.reset() %>
+              </div>
+        </fieldset>
+      <%= this.form.end() %>
+    </div>
+  </div>
+</div>
